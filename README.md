@@ -86,12 +86,14 @@ print(f"Final: layer {max(profile)} (MRR={profile[max(profile)]:.3f})")
 
 ## Empirical basis
 
-Based on experiments across 11 model configurations, 3 clinical corpora, and 2 query formats (~1,400 conditions):
+Based on experiments across 11 model configurations, 3 clinical corpora, and 2 query formats (~1,400 layer × condition combinations):
 
-- **Corpus-only whitening** improved MRR@10 on all 16 heterogeneous clinical text conditions (MTSamples, PMC-Patients) and was negative on all 8 structurally uniform conditions (Synthetic)
-- **Transductive whitening** improved MRR@10 on all 24 conditions, with gains of +0.16 to +0.27 on degraded models
-- **Participation ratio** correlates with MRR@10 at ρ = 0.736 (p = 0.010); excluding EOS-pooled models: ρ = 0.964 (p < 0.001)
-- **All models** exhibit a U-shaped MRR curve across layers with mid-layer collapse
+Corpus-only whitening improved MRR@10 on all 16 heterogeneous clinical text conditions (MTSamples, PMC-Patients) by +0.10 to +0.27, and was negative on all 8 structurally uniform conditions (Synthetic)
+Transductive whitening improved MRR@10 on all 24 conditions, with gains of +0.24 to +0.36 on heterogeneous corpora
+Participation ratio correlates with MRR@10 at ρ = 0.736 (p = 0.010); excluding the EOS-pooled model: ρ = 0.855 (p = 0.002)
+All models exhibit a U-shaped MRR curve across layers with mid-layer collapse
+
+Based on experiments across 11 model configurations, 3 clinical corpora, and 2 query formats (~1,400 conditions):
 
 For full details see:
 
