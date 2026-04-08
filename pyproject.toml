@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "clinical-embedding-fix"
-version = "0.1.0"
+version = "0.2.0"
 description = "Post-hoc corrections for degenerate clinical text embeddings in RAG pipelines"
 readme = "README.md"
 license = {text = "MIT"}
