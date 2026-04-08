@@ -93,8 +93,6 @@ Based on experiments across 11 model configurations, 3 clinical corpora, and 2 q
 - Participation ratio correlates with MRR@10 at ρ = 0.736 (p = 0.010); excluding the EOS-pooled model: ρ = 0.855 (p = 0.002)
 - All models exhibit a U-shaped MRR curve across layers with mid-layer collapse
 
-Based on experiments across 11 model configurations, 3 clinical corpora, and 2 query formats (~1,400 conditions):
-
 For full details see:
 
 > Mikkelsen Y. Context or Tuning? Layer-Level Analysis of Embedding Degradation in Clinical Document Retrieval. Submitted to JAMIA. 2026.
