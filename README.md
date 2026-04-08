@@ -121,4 +121,4 @@ pytest tests/ -v
 
 ## License
 
-CC BY 4.0. See [LICENSE](LICENSE) for details.
+MIT. See [LICENSE](LICENSE) for details.
